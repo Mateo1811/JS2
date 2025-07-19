@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de compras</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <a href="#" id="cart-icon"><i class="fa-solid fa-cart-shopping"></i> Ver
+            carrito (<span id="cart-count">0</span>)</a>
+    </header>
+
+    <section class="products container">
+
+        <div class="card-product">
+            <img src="./img/buzo2.webp" alt="">
+            <div class="product-title">
+                <h3>Buzo</h3>
+                <p class="price">$100000</p>
+            </div>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card-product">
+            <img src="./img/remera3.webp" alt="">
+            <div class="product-title">
+                <h3>Remera</h3>
+                <p class="price">$50000</p>
+            </div>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card-product">
+            <img src="./img/pantalon6.webp" alt="">
+            <div class="product-title">
+                <h3>Pantalón</h3>
+                <p class="price">$110000</p>
+            </div>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card-product">
+            <img src="./img/pantalon7.webp" alt="">
+            <div class="product-title">
+                <h3>Short</h3>
+                <p class="price">$80000</p>
+            </div>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+        </div>
+
+        <div class="card-product">
+            <img src="./img/zapatillas.webp" alt="">
+            <div class="product-title">
+                <h3>Zapatillas Nike</h3>
+                <p class="price">$100000</p>
+            </div>
+            <div class="product-button">
+                <i class="fa-solid fa-heart"></i>
+                <a href="#" class="add-to-cart">Agregar al carrito</a>
+            </div>
+        </div>
+
+    </section>
+
+    <div id="cart-modal" class="cart-modal">
+        <div class="cart-content">
+            <span class="close-cart" id="close-cart">&times;</span>
+            <h2>Carrito de compras</h2>
+            <ul id="cart-items"></ul>
+            <p id="total">Total: $0</p>
+            <button id="checkout">Finalizar compra</button>
+            <button id="empty-cart">Vaciar carrito</button>
+        </div>
+    </div>
+
+    <div id="purchase-modal" class="purchase-modal">
+        <div class="purchase-content">
+            <h2>Compra finalizada!</h2>
+            <p>Gracias por tu compra.</p>
+            <button id="close-purchase">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
